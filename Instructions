@@ -1,4 +1,6 @@
 Main files 
 i) spam.csv
 ii) app.py 
-iii) vectorizer
+iii) vectorizer.pkl
+iv) model.pkl
+
