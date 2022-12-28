@@ -37,6 +37,7 @@ vectorizer = CountVectorizer(analyzer="word",
                              stop_words=None,
                              max_features=5000,
                              ngram_range=(1, 2)
+vectorizer.fit(clean_train_Descriptions)
 tfidf = pickle.load(open('vectorizer.pkl','rb'))
 model = pickle.load(open('model.pkl','rb'))
 
