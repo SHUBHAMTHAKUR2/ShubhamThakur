@@ -37,7 +37,6 @@ vectorizer = CountVectorizer(analyzer="word",
                              stop_words=None,
                              max_features=5000,
                              ngram_range=(1, 2)
-tfidf = pickle.load(open('vectorizer.pkl','rb'))
 model = pickle.load(open('model.pkl','rb'))
 
 st.title("Email/SMS Spam Classifier")
