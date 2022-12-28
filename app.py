@@ -31,7 +31,12 @@ def transform_text(text):
         y.append(ps.stem(i))
 
     return " ".join(y)
-
+vectorizer = CountVectorizer(analyzer="word",
+                             tokenizer=None,
+                             preprocessor=None,
+                             stop_words=None,
+                             max_features=5000,
+                             ngram_range=(1, 2)
 tfidf = pickle.load(open('vectorizer.pkl','rb'))
 model = pickle.load(open('model.pkl','rb'))
 
